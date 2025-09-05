@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nimesh Sharma | Video Editor</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
+  <script src="script.js" defer></script>
+  <link  rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+/>
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+/>
+<!-- FontAwesome for Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+
+  <div class="background-light"></div>
+
+<header class="navbar glas">
+  <div class="">
+    <img src="nimesh.jpg" class="nav-left">
+  </div>
+
+  <div class="nav-right">
+    <button id="toggle-theme">Theme</button>
+
+    <!-- Hamburger Icon -->
+    <button id="hamburger" class="hamburger-icon">
+      <i class="fas fa-bars"></i>
+    </button>
+  </div>
+  <script>
+  const hamburgerBtn = document.getElementById("hamburger-btn");
+  const sideMenu = document.getElementById("side-menu");
+  const closeBtn = document.getElementById("close-btn");
+
+  hamburgerBtn.addEventListener("click", () => {
+    sideMenu.classList.add("active");
+  });
+
+  closeBtn.addEventListener("click", () => {
+    sideMenu.classList.remove("active");
+  });
+  
+  const navLinks = document.querySelector(".nav-links");
+
+  hamburgerBtn.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+  });
+
+
+  // Close when clicking outside
+  document.addEventListener("click", (e) => {
+    if (!sideMenu.contains(e.target) && !hamburgerBtn.contains(e.target)) {
+      sideMenu.classList.remove("active");
+    }
+  });
+</script>
+
+
+  <!-- Full Navigation Menu -->
+  <nav class="nav-links" id="nav-menu">
+    <a href="#about">About</a>
+    <a href="#experience">Experience</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+    <a href="#projects">Projects</a>
+  </nav>
+</header>
+
+
+
+
+
+<!-- Tagline below navbar -->
+<section class="tagline-banner">
+  <p class="tagline">Video Editor | Creative Storyteller</p>
+</section>
+
+
+  <main>
+    <section id="profile" class="glass profile-section">
+  <div class="profile-container">
+    <img src="nimesh.jpg" alt="Nimesh Sharma" class="profile-pic">
+    <div class="profile-details">
+      <h2>Nimesh Sharma</h2>
+      <p class="title">Video Editor</p>
+      <p class="tagline">“Crafting stories frame by frame”</p>
+        <div class="social-icons">
+    <a href="https://www.instagram.com/nimesh_573?igsh=NHliaWIxcWlia3dy" target="_blank"><i class="fab fa-instagram"></i></a>
+    <a href="https://www.linkedin.com/in/nimesh-sharma-2657b2272?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+    <a href="//youtube.com/@nimeshsharma2345?si=DxUblVvGN-Izihbb" target="_blank"><i class="fab fa-youtube"></i></a>
+    <a href="mailto:nimeshsha rma947@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+    <a href="https://wa.me/+919773878369?text=Hi%20Nimesh%2C%20I%20saw%20your%20portfolio..." target="_blank">
+<i class="fab fa-whatsapp"></i></a>
+    </div>
+   </div>
+  </div>
+
+</section>
+
+    <section id="about" class="glass">
+      <h2>About Me</h2>
+      <p>I am a video editor with experience in YouTube content, ad films, and BTS editing. I’ve worked as a senior editor at Cinemaan,
+        handling a team of junior editors, and as a junior editor at Mayhigh Films. My edits have generated over a million views online.</p>
+    </section>
+
+    <section id="experience" class="glass">
+      <h2>Work Experience</h2>
+      <ul>
+        <li><strong>Cinemaan</strong> – Senior Video Editor
+        ((Managed 2 junior editors, handled long-form + short content)
+)</li>
+        <li><strong>Mayhigh Films</strong> – Junior Video Editor  (Ad films + BTS editing)
+</li>
+        <li><strong>Freelance</strong> – YouTube Content for Various Creators  (You can name them if you want)
+</li>
+      </ul>
+    </section>
+
+
+    <section id="skills" class="glass">
+      <h2>Skills</h2>
+      <p><strong>Software:</strong> Adobe Premiere Pro, After Effects, Photoshop</p>
+      <p><strong>Strengths:</strong> Storytelling, Smooth cuts, Syncing music & visuals, Color grading, Ad film editing, YouTube content</p>
+    </section>
+<!-- Our Services Section -->
+<section id="services" class="glass section">
+  <h2>Our Services</h2>
+
+  <div class="services-grid">
+    <!-- Service 1 -->
+         <div class="service-card">
+      <i class="fas fa-video service-icon"></i>
+      <h3>youtube-video</h3>
+      <p>Interactive youtube videos, positive ratings, and experience relevant to your content. .</p>
+    </div>
+
+
+    <!-- Service 2 -->
+    <div class="service-card">
+      <i class="fas fa-building service-icon"></i>
+      <h3>Corporate Video & More</h3>
+      <p>Engaging corporate videos and more, crafted to inspire success.</p>
+    </div>
+
+    <!-- Service 3 -->
+    <div class="service-card">
+      <i class="fas fa-podcast service-icon"></i>
+      <h3>Podcast Video________.</h3>
+      <p>Conversations, stories, and ideas that connect, inspire, and grow.</p>
+    </div>
+
+    <!-- Service 4 -->
+        <div class="service-card">
+      <i class="fas fa-tv service-icon"></i>
+      <h3>TV & Digital Ad Film</h3>
+      <p>A powerful story crafted for screens — TV and digital.</p>
+    </div>
+</section>
+
+<!-- FontAwesome for Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<script>
+  // Intersection Observer for scroll visibility effect
+  const serviceCards = document.querySelectorAll(".service-card");
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("visible");
+        observer.unobserve(entry.target); // Animate only once
+      }
+    });
+  }, { threshold: 0.2 });
+
+  serviceCards.forEach(card => observer.observe(card));
+
+  const slides = document.querySelector(".slides");
+  const prevBtn = document.querySelector(".services-slider .prev");
+  const nextBtn = document.querySelector(".services-slider .next");
+
+  let index = 0;
+
+  function cardsPerView() {
+    if (window.innerWidth >= 900) return 3; // desktop
+    if (window.innerWidth >= 600) return 2; // tablet
+    return 1; // mobile
+  }
+
+  function showSlide(i) {
+    const perView = cardsPerView();
+    const maxIndex = Math.ceil(serviceCards.length / perView) - 1;
+
+    if (i < 0) index = maxIndex;
+    else if (i > maxIndex) index = 0;
+    else index = i;
+
+    slides.style.transform = `translateX(${-index * 100}%)`;
+  }
+
+  nextBtn.addEventListener("click", () => showSlide(index + 1));
+  prevBtn.addEventListener("click", () => showSlide(index - 1));
+
+  // Auto Slide
+  setInterval(() => {
+    showSlide(index + 1);
+  }, 4000);
+
+  window.addEventListener("resize", () => showSlide(index));
+</script>
+
+
+<section id="projects" class="glass section">
+  <h2>Projects</h2>
+
+  <!-- Filter Buttons -->
+  <div class="project-tabs">
+    <button class="tab-button" data-target="bts">Faceless & Facecam videos</button>
+    <button class="tab-button" data-target="adfilm">Ad Film</button>
+    <button class="tab-button" data-target="highlights">Event Highlights</button>
+    <button class="tab-button active" data-target="event">Podcast</button>
+  </div>
+
+  <!-- Videos: Category-wise -->
+  <div class="project-videos">
+
+    <div class="video-category active" id="event">
+      <h3>Podcast</h3>
+      <div class="video-grid">
+        <iframe src="https://www.youtube.com/embed/6fxILrQdbCs" 
+              frameborder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+              allowfullscreen></iframe>
+
+      <iframe src="https://www.youtube.com/embed/QUYQkOKnq_w" 
+              frameborder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+              allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <div class="video-category" id="adfilm">
+      <h3>Ad Films</h3>
+      <div class="video-grid">
+        <iframe src="https://www.youtube.com/embed/QGCn9DcOOtE" 
+              frameborder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+              allowfullscreen></iframe>
+
+      <iframe src="https://www.youtube.com/embed/av9vwv5-maU" 
+              frameborder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+              allowfullscreen></iframe>
+                    <iframe src="https://www.youtube.com/embed/GhqqfUaO3jQ" 
+              frameborder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+              allowfullscreen></iframe>
+               <iframe src="https://www.youtube.com/embed/xZsHzKTOIzM" 
+              frameborder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+              allowfullscreen></iframe>
+              <iframe src="https://www.youtube.com/embed/sXjR3YP3tYI" 
+              frameborder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+              allowfullscreen></iframe>
+               <iframe src="https://www.youtube.com/embed/PjHY31iM2RM" 
+              frameborder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+              allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <div class="video-category" id="highlights">
+      <h3>Event Highlights</h3>
+      <div class="video-grid">
+        <iframe src="https://www.youtube.com/embed/qvjGb0-c3nk" 
+              frameborder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+              allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/3N8yyZ1c_Cs" 
+              frameborder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+              allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <div class="video-category" id="bts">
+      <h3>Faceless & Facecam videos</h3>
+      <div class="video-grid">
+        <iframe src="https://www.youtube.com/embed/WaKmEosvqWM" 
+              frameborder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+              allowfullscreen></iframe>
+                   <iframe src="https://www.youtube.com/embed/0TjPSSYtKsQ" 
+              frameborder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+              allowfullscreen></iframe>
+              <iframe src="https://www.youtube.com/embed/X39tTFHS1EA" 
+              frameborder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+              allowfullscreen></iframe>
+              <iframe src="https://www.youtube.com/embed/XR3pno6U2tE" 
+              frameborder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+              allowfullscreen></iframe>
+      </div>
+    </div>
+
+  </div>
+  <script>
+      // Select all tab buttons
+  const tabButtons = document.querySelectorAll(".tab-button");
+  const videoCategories = document.querySelectorAll(".video-category");
+
+  tabButtons.forEach(button => {
+    button.addEventListener("click", () => {
+      // Remove active class from all buttons
+      tabButtons.forEach(btn => btn.classList.remove("active"));
+      // Add active class to the clicked button
+      button.classList.add("active");
+
+      // Hide all video categories
+      videoCategories.forEach(category => category.classList.remove("active"));
+
+      // Show the selected category
+      const targetId = button.getAttribute("data-target");
+      document.getElementById(targetId).classList.add("active");
+    });
+  });
+  </script>
+</section>
+
+
+    <section id="details" class="glass section">
+  <h2>Details</h2>
+  <div class="details-grid">
+    <div class="detail-item">
+      <h4>📧 Email</h4>      <p>nimeshsharma947@gmail.com</p>
+
+      <h4>📍 Location</h4>
+      <p>New Delhi, India</p>
+      <h4>🕒 Availability</h4>
+      <p>Freelance & Full-Time Projects</p>
+      <h4>💬 Languages</h4>
+      <p>English, Hindi</p>
+      <h4>📆 Working Hours</h4>
+      <p>Mon - Sat: 10:00 AM – 8:00 PM</p>
+      <h4>⚡ Editing Specialty</h4>
+      <p>Fast turnarounds with cinematic quality</p>
+    </div>
+  </div>
+</section>
+    <section id="contact" class="glass">
+      <h2>Contact Me</h2>
+      <form id="contactForm">
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+      <div id="response-message"></div>
+    </section>
+
+
+
+  </main>
+
+  <footer class="glass">
+    <p>© 2025 Nimesh Sharma. All rights reserved.</p>
+  </footer>
+<script>
+  // Contact Form Submission
+  document.getElementById('contact-form').addEventListener('submit', async function (e) {
+    e.preventDefault();
+
+    const formData = {
+      name: this.name.value,
+      email: this.email.value,
+      message: this.message.value
+    };
+
+    try {
+      const response = await fetch('/send', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData)
+      });
+
+      const result = await response.json();
+      document.getElementById('response-message').textContent = result.message;
+    } catch (err) {
+      document.getElementById('response-message').textContent = 'An error occurred.';
+    }
+  });
+</script>
+</body>
+</html>
